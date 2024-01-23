@@ -1,0 +1,252 @@
+html {
+  height: 100%;
+  font-family: "Michroma", Arial, sans-serif;
+  font-family: "Ubuntu Mono", Arial, monospace;
+  font-display: none;
+  color: #bdc9cf;
+}
+
+body {
+  min-height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(Images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg);
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Header */
+
+#page-wrapper {
+  padding-top: 3.5rem;
+}
+
+#header {
+  position: fixed;
+  cursor: default;
+  height: 4.5rem;
+  left: 0;
+  line-height: 3.5em;
+  position: fixed;
+  top: 10px;
+  width: 100%;
+  z-index: 100;
+}
+#header nav {
+  position: absolute;
+  right: 1em;
+  top: 0;
+}
+
+#header nav ul {
+  font-style: normal;
+  margin: 0;
+}
+
+#header nav ul li {
+  font-family: "Michroma", Arial, sans-serif;
+  display: inline-block;
+  margin-left: 1em;
+}
+
+#header nav ul li:nth-child(1) a {
+  color: #bdc9cf;
+}
+
+#header nav ul li:nth-child(2) a {
+  color: #bdc9cf;
+}
+
+#header nav ul li:nth-child(3) a {
+  color: #bdc9cf;
+}
+
+#header nav ul li:nth-child(4) a {
+  color: #cc7f2b;
+}
+#header nav ul li a,
+#header nav ul li span {
+  text-decoration: none;
+  font-size: 24px;
+  border: 0;
+  color: #bdc9cf;
+  display: inline-block;
+  height: inherit;
+  line-height: inherit;
+  outline: 0;
+}
+
+#header nav ul li a.button,
+#header nav ul li span.button {
+  height: 2em;
+  line-height: 2em;
+  padding: 0 1.25em;
+}
+
+#header nav ul li a:not(.button):before,
+#header nav ul li span:not(.button):before {
+  margin-right: 0.5em;
+}
+
+#header nav ul li > ul {
+  display: none;
+}
+
+body.landing #page-wrapper {
+  padding-top: 0;
+}
+
+body.landing #header {
+  background: transparent;
+  box-shadow: none;
+  position: absolute;
+}
+/* /header */
+
+/* Banner */
+
+#banner {
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+  text-align: center;
+  z-index: 21;
+}
+
+#banner:before {
+  content: "";
+  display: inline-block;
+  height: 100vh;
+  vertical-align: middle;
+  width: 1%;
+}
+
+#banner:after {
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#banner .content {
+  display: inline-block;
+  margin-right: 1%;
+  max-width: 95%;
+  padding: 6em;
+  position: relative;
+  text-align: right;
+  vertical-align: middle;
+  z-index: 1;
+}
+
+#banner .content header {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#banner .content header h2 {
+  font-family: "Michroma";
+  font-size: 2.5em;
+  color: #bdc9cf;
+  margin: 0;
+}
+#banner .content header h3 {
+  font-family: "Michroma";
+  font-size: 1.5em;
+  color: #bdc9cf;
+  margin: 0;
+}
+
+#banner .content header p {
+  font-family: "Ubuntu Mono";
+  font-size: 1.5em;
+  color: #bdc9cf;
+  margin: 0.5em 0 0 0;
+  top: 0;
+}
+#banner .content header a.btn.btn-link {
+  font-family: "Michroma";
+  font-size: 1em;
+  color: #bdc9cf;
+  text-decoration: none;
+  margin: 0.5em 0 0 0;
+  top: 0;
+  background-color: #cc7f2b;
+  border-color: #cc7f2b;
+  border-radius: 20rem;
+}
+
+#banner.content footer {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#banner .content .image {
+  border-radius: 100%;
+  display: inline-block;
+  height: 18em;
+  margin-left: 3em;
+  vertical-align: middle;
+  width: 18em;
+}
+
+#banner .content .image img {
+  border-radius: 10%;
+  display: block;
+  width: 100%;
+}
+
+body.is-touch #banner {
+  background-attachment: scroll;
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0px;
+}
+
+footer ul li {
+  margin: 0px;
+  list-style: none outside none;
+  display: inline-block;
+}
+
+footer i {
+  width: 10rem;
+  color: #bdc9cf;
+  border-radius: 100%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+}
+
+footer i:hover {
+  color: #cc7f2b;
+  text-decoration: none;
+  transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+}

@@ -1,0 +1,236 @@
+html {
+  height: 100%;
+  font-family: "Michroma", Arial, sans-serif;
+  font-family: "Ubuntu Mono", Arial, monospace;
+  font-display: none;
+  color: #bdc9cf;
+}
+
+body {
+  min-height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(Images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg);
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Header */
+
+#page-wrapper {
+  padding-top: 3.5rem;
+}
+
+#header {
+  position: fixed;
+  cursor: default;
+  height: 3.5rem;
+  left: 0;
+  line-height: 3.5em;
+  position: fixed;
+  top: 10px;
+  bottom: 10px;
+  width: 100%;
+  z-index: 100;
+}
+
+#header nav {
+  position: absolute;
+  right: 1em;
+  top: 0;
+}
+
+#header nav ul {
+  font-style: normal;
+  margin: 0;
+}
+
+#header nav ul li {
+  font-family: "Michroma", Arial, sans-serif;
+  font-size: 1.2em;
+  display: inline-block;
+  margin-left: 1em;
+}
+
+#header nav ul li:nth-child(1) a {
+  color: #bdc9cf;
+}
+
+#header nav ul li:nth-child(2) a {
+  color: #bdc9cf;
+}
+
+#header nav ul li:nth-child(3) a {
+  color: #bdc9cf;
+}
+
+#header nav ul li:nth-child(4) a {
+  color: #cc7f2b;
+}
+#header nav ul li a,
+#header nav ul li span {
+  text-decoration: none;
+  font-size: 24px;
+  border: 0;
+  color: #bdc9cf;
+  display: inline-block;
+  height: inherit;
+  line-height: inherit;
+  outline: 0;
+}
+
+#header nav ul li a.button,
+#header nav ul li span.button {
+  height: 2em;
+  line-height: 2em;
+  padding: 0 1.25em;
+}
+
+#header nav ul li a:not(.button):before,
+#header nav ul li span:not(.button):before {
+  margin-right: 0.5em;
+}
+
+#header nav ul li > ul {
+  display: none;
+}
+
+body.landing #page-wrapper {
+  padding-top: 0;
+}
+
+body.landing #header {
+  background: transparent;
+  box-shadow: none;
+  position: absolute;
+}
+/* /header */
+
+/* Banner */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Michroma", Arial, sans-serif;
+  color: #363636;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-gap: 40px;
+  padding: 10px;
+}
+
+.container .box {
+  position: relative;
+  height: 400px;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.container .box::before {
+  position: absolute;
+  content: "";
+  top: 99%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #cc7f2b;
+  background-image: linear-gradient(315deg, #cc7f2b 0%, #cc7f2b 75%);
+  transition: 0.4s;
+}
+.container .box:hover::before {
+  top: 50%;
+  
+}
+
+.container .box .imgbox {
+  width: 100%;
+  height: 50%;
+}
+
+.container .box .imgbox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container .box h1 {
+  font-size: 30px;
+  position: relative;
+}
+.container .box:hover h1 {
+  font-size: 20px;
+  position: relative;
+}
+
+
+.container .box p {
+  font-family: "Ubuntu Mono";
+  font-size: 15px;
+  position: relative;
+}
+.container .box:hover p {
+  color: #bdc9cf;
+  font-size: 20px;
+  position: relative;
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0px;
+}
+
+footer ul li {
+  margin: 0px;
+  list-style: none outside none;
+  display: inline-block;
+}
+
+footer i {
+  width: 10rem;
+  color: #bdc9cf;
+  border-radius: 100%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+}
+
+footer i:hover {
+  color: #cc7f2b;
+  text-decoration: none;
+  transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+}
